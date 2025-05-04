@@ -1,12 +1,14 @@
 import './App.css';
 
 function App() {
+  const url="https://drive.google.com/file/d/1fC1l5J5V9PIFCDk8w3R08RLTDZGRY7ax/view?usp=sharing";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white flex flex-col">
       {/* Navbar */}
       <header className="flex justify-between items-center px-6 py-4 shadow-md">
         <h1 className="text-2xl font-bold text-teal-400">Taskrypt</h1>
-        <a href='https://drive.google.com/file/d/1Nv-q2kjRuPQWGqmCrS8iv0iIdQaIubQj/view?usp=sharing' target='_blank' className="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-full text-sm font-semibold">
+        <a href={url} target='_blank' className="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-full text-sm font-semibold">
           Download
         </a>
       </header>
@@ -20,7 +22,7 @@ function App() {
           Taskrypt helps you organize, manage, and accomplish your daily goals effortlessly. Stay focused. Stay productive.
         </p>
         <div className="space-x-4">
-          <a href='https://drive.google.com/file/d/1Nv-q2kjRuPQWGqmCrS8iv0iIdQaIubQj/view?usp=sharing' target='_blank' className="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg transition-all">
+          <a href={url} target='_blank' className="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg transition-all">
             Try for Free
           </a>
           <a href='https://sayandip-adhikary.vercel.app/' target='_blank' className="border border-gray-400 px-6 py-3 rounded-full text-white hover:border-white transition-all">
